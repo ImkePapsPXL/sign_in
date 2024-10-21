@@ -20,5 +20,18 @@ namespace log_in
         {
             InitializeComponent();
         }
+
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (NameTextBox.Text.Equals("admin") && PasswordTextBox.Text.Equals("admin"))
+            {
+                InfoTextBlock.Text = "U wordt ingelogd.";
+            }
+        }
+
+        private void LogOffButton_Click(object sender, RoutedEventArgs e)
+        {
+            InfoTextBlock.Text = "";
+        }
     }
 }
